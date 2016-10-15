@@ -12,12 +12,6 @@ namespace FrontEndWebServer.Controllers
     [Route("api/[controller]")]
     public class DoublesController : Controller
     {
-        private static readonly Uri serviceUri;
-
-        static DoublesController()
-        {
-            serviceUri = new Uri(FabricRuntime.GetActivationContext().ApplicationName + "/StatefulOne");
-        }
 
         // GET api/doubles
         [HttpGet]
